@@ -1,12 +1,20 @@
 {
   "name": "my-project",
   "source": "src/index.html",
+  "license": "MIT",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
   },
+  "@parcel/transformer-css": {
+    "cssModules": {
+      "dashedIdents": true
+    }
+  },
   "devDependencies": {
+    "@parcel/transformer-sass": "2.8.3",
+    "buffer": "^5.5.0",
     "parcel": "^2.8.3",
     "video.js": "^8.3.0"
   }
